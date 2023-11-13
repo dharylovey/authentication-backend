@@ -6,11 +6,14 @@ const bcrypt = require('bcrypt');
 const User = require('./db/userModel');
 const jwt = require('jsonwebtoken');
 const auth = require('./auth');
+const cors = require('cors');
 
 
 dbConnect() // run database!
 
+app.use(cors())
 app.use(express.json())
+
 
 // body parser configuration
 // app.use(bodyParser.json());
