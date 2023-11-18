@@ -59,7 +59,7 @@ app.post('/register', (request, response)=> {
         })
         .catch((error)=> {
           response.status(500).send({
-            message: 'Errod Creating User!',
+            message: 'Error Creating User!',
             error,
           })
         })
